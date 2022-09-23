@@ -524,11 +524,11 @@
   }
 }
 /*!
-* Bootstrap v5.0.0 (https://getbootstrap.com/)
-* Copyright 2011-2021 The Bootstrap Authors
-* Copyright 2011-2021 Twitter, Inc.
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-*/
+ * Bootstrap v5.0.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11718,58 +11718,58 @@ nav #navbar.collapse.in {
 }
 
 .cc-sticky-nav-btn #dashboard-nav-icon {
-  background-image: url(CC_Profile_Avatars_50.3736a42755341fa4.png);
+  background-image: url(https://lymefriends.com/CC_Profile_Avatars_50.3736a42755341fa4.png);
 }
 
 .cc-sticky-nav-btn #dashboard-nav-icon:hover,
 .cc-sticky-nav-btn #dashboard-nav-icon:focus,
 .cc-sticky-nav-btn #dashboard-nav-icon:active,
 .cc-sticky-nav-btn.active #dashboard-nav-icon {
-  background-image: url(CC_Profile_Avatars_Active_50.a280e9a538f02142.png);
+  background-image: url(https://lymefriends.com/CC_Profile_Avatars_Active_50.a280e9a538f02142.png);
 }
 
 .cc-sticky-nav-btn #u-match-nav-icon {
-  background-image: url(CC_Icon_Match_50.3a5ecd49e32a80be.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Match_50.3a5ecd49e32a80be.png);
 }
 
 .cc-sticky-nav-btn #u-match-nav-icon:hover,
 .cc-sticky-nav-btn #u-match-nav-icon:focus,
 .cc-sticky-nav-btn #u-match-nav-icon:active,
 .cc-sticky-nav-btn.active #u-match-nav-icon {
-  background-image: url(CC_Icon_Match_Active_50.37c2240e0df49c39.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Match_Active_50.37c2240e0df49c39.png);
 }
 
 .cc-sticky-nav-btn #discussions-nav-icon {
-  background-image: url(CC_Icon_Discussion_50.a4a7ce56ab3f377d.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Discussion_50.a4a7ce56ab3f377d.png);
 }
 
 .cc-sticky-nav-btn #discussions-nav-icon:hover,
 .cc-sticky-nav-btn #discussions-nav-icon:focus,
 .cc-sticky-nav-btn #discussions-nav-icon:active,
 .cc-sticky-nav-btn.active #discussions-nav-icon {
-  background-image: url(CC_Icon_Discussion_Active_50.f7b69caa141f7daf.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Discussion_Active_50.f7b69caa141f7daf.png);
 }
 
 .cc-sticky-nav-btn #symptoms-nav-icon {
-  background-image: url(CC_Icon_Symptoms_50.f9f867b986a01a1f.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Symptoms_50.f9f867b986a01a1f.png);
 }
 
 .cc-sticky-nav-btn #symptoms-nav-icon:hover,
 .cc-sticky-nav-btn #symptoms-nav-icon:focus,
 .cc-sticky-nav-btn #symptoms-nav-icon:active,
 .cc-sticky-nav-btn.active #symptoms-nav-icon {
-  background-image: url(CC_Icon_Symptoms_Active_50.a87daa71719a6334.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Symptoms_Active_50.a87daa71719a6334.png);
 }
 
 .cc-sticky-nav-btn #key-indicators-nav-icon {
-  background-image: url(CC_Icon_Indicators_50.91e3dd19dd3ad17c.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Indicators_50.91e3dd19dd3ad17c.png);
 }
 
 .cc-sticky-nav-btn #key-indicators-nav-icon:hover,
 .cc-sticky-nav-btn #key-indicators-nav-icon:focus,
 .cc-sticky-nav-btn #key-indicators-nav-icon:active,
 .cc-sticky-nav-btn.active #key-indicators-nav-icon {
-  background-image: url(CC_Icon_Indicators_Active_50.d92b481b93cca081.png);
+  background-image: url(https://lymefriends.com/CC_Icon_Indicators_Active_50.d92b481b93cca081.png);
 }
 
 .cc-sticky-nav-btn h5,
