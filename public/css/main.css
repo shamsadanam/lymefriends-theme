@@ -25047,3 +25047,24 @@ app-messages-modal {
 .cc-iamge-wrapper img {
   max-height: 400px;
 }
+
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-hero {
+  min-height: 80vh;
+}
+.lf-hero h1,
+.lf-hero span {
+  color: #fff;
+}
+
+.lf-why__heading {
+  background-color: #742e90;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+}

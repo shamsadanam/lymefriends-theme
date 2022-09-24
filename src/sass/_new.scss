@@ -1,0 +1,25 @@
+// utils
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// hero section
+.lf-hero {
+  min-height: 80vh;
+  h1,
+  span {
+    color: #fff;
+  }
+}
+
+// why section
+.lf-why {
+  &__heading {
+    background-color: #742e90;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+}
