@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <!-- Why Lyme -->
+    <!-- Why Lyme & Videos-->
     <section class="container-fluid lf-why">
       <h1 class="lf-why__heading text-center p-5 m-0">Why Lymefriends</h1>
       <div class="row g-0">
@@ -117,8 +117,49 @@
         </div>
       </div>
     </section>
-    <!-- Videos -->
+    <!-- Modal Trigger-->
+    <button
+      type="button"
+      class="btn btn-primary video-btn"
+      data-bs-toggle="modal"
+      data-src="https://www.youtube.com/embed/IP7uGKgJL8U"
+      data-bs-target="#myModal"
+    >
+      Play Video 2
+    </button>
+    <!-- Modal -->
 
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <!-- 16:9 aspect ratio -->
+            <div class="ratio ratio-16x9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
     <div class="container-fluid">
@@ -492,5 +533,42 @@
         <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
       </div>
     </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      type="module"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"
+      type="module"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Gets the video src from the data-src on each button
+
+        var $videoSrc;
+        $(".video-btn").click(function () {
+          $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
+
+        // when the modal is opened autoplay it
+        $("#myModal").on("shown.bs.modal", function (e) {
+          // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+          $("#video").attr(
+            "src",
+            $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+          );
+        });
+
+        // stop playing the youtube video when I close the modal
+        $("#myModal").on("hide.bs.modal", function (e) {
+          // a poor man's stop video
+          $("#video").removeAttr("src");
+        });
+
+        // document ready
+      });
+    </script>
   </body>
 </html>
