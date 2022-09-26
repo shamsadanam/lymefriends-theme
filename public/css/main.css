@@ -25068,6 +25068,9 @@ app-messages-modal {
   font-size: 2.4rem;
   font-weight: bold;
 }
+.lf-why .lf-v-card {
+  width: 100%;
+}
 
 .modal-dialog {
   max-width: 800px;
