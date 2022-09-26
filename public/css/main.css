@@ -25063,15 +25063,28 @@ app-messages-modal {
 }
 
 .lf-why__heading {
-  background-color: #742e90;
-  color: #fff;
-  font-size: 4rem;
+  background-color: #fff;
+  color: #742e90;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 .modal-dialog {
   max-width: 800px;
   margin: 30px auto;
+}
+
+.modal.fade .modal-dialog {
+  transform: translateY(-300px) scale(0.1);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 1200;
+}
+
+.modal.fade.show .modal-dialog {
+  top: -300px;
+  opacity: 1;
+  transform: translateY(300px) scale(1);
 }
 
 .modal-body {

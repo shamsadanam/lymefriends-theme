@@ -24,81 +24,56 @@
       </div>
     </section>
     <!-- Navigation -->
-    <div _ngcontent-rxs-c13="" class="container">
-      <div _ngcontent-rxs-c13="" class="row margin-top-1">
-        <div
-          _ngcontent-rxs-c13=""
-          class="col-2 cc-sticky-nav-btn text-center active"
-        >
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-2 cc-sticky-nav-btn text-center active">
           <a
-            _ngcontent-rxs-c13=""
-            routerlinkactive="active"
-            href="#/health-story"
-            class="active"
-            ><div
-              _ngcontent-rxs-c13=""
-              id="dashboard-nav-icon"
-              class="img-div"
-            ></div>
-            <h5 _ngcontent-rxs-c13="">Health Story</h5></a
+            class="active video-btn"
+            data-bs-toggle="modal"
+            data-src="6ophW7Ask_0"
+            data-bs-target="#lymePopup"
           >
+            <div id="dashboard-nav-icon" class="img-div"></div>
+            <h5>Health Story</h5>
+          </a>
         </div>
-        <div _ngcontent-rxs-c13="" class="col-2 cc-sticky-nav-btn text-center">
-          <a _ngcontent-rxs-c13="" routerlinkactive="active" href="#/match"
-            ><div
-              _ngcontent-rxs-c13=""
-              id="u-match-nav-icon"
-              class="img-div"
-            ></div>
-            <h5 _ngcontent-rxs-c13="">Match</h5></a
-          >
+        <div class="col-2 cc-sticky-nav-btn text-center">
+          <a>
+            <div id="u-match-nav-icon" class="img-div"></div>
+            <h5>Match</h5>
+          </a>
         </div>
-        <div _ngcontent-rxs-c13="" class="col-2 cc-sticky-nav-btn text-center">
-          <a _ngcontent-rxs-c13="" routerlinkactive="active" href="#/discuss"
-            ><div
-              _ngcontent-rxs-c13=""
-              id="discussions-nav-icon"
-              class="img-div"
-            ></div>
-            <h5 _ngcontent-rxs-c13="">Discuss</h5></a
-          >
+        <div class="col-2 cc-sticky-nav-btn text-center">
+          <a>
+            <div id="discussions-nav-icon" class="img-div"></div>
+            <h5>Discuss</h5>
+          </a>
         </div>
-        <div _ngcontent-rxs-c13="" class="col-2 cc-sticky-nav-btn text-center">
-          <a _ngcontent-rxs-c13="" routerlinkactive="active" href="#/symptoms"
-            ><div
-              _ngcontent-rxs-c13=""
-              id="symptoms-nav-icon"
-              class="img-div"
-            ></div>
-            <h5 _ngcontent-rxs-c13="">Symptoms</h5></a
-          >
+        <div class="col-2 cc-sticky-nav-btn text-center">
+          <a>
+            <div id="symptoms-nav-icon" class="img-div"></div>
+            <h5>Symptoms</h5>
+          </a>
         </div>
-        <div _ngcontent-rxs-c13="" class="col-2 cc-sticky-nav-btn text-center">
-          <a _ngcontent-rxs-c13="" routerlinkactive="active" href="#/regimens"
-            ><div _ngcontent-rxs-c13="" class="img-div">
-              <i _ngcontent-rxs-c13="" class="fa fa-tasks"></i>
+        <div class="col-2 cc-sticky-nav-btn text-center">
+          <a>
+            <div class="img-div">
+              <i class="fa fa-tasks"></i>
             </div>
-            <h5 _ngcontent-rxs-c13="">Regimens</h5></a
-          >
+            <h5>Regimens</h5>
+          </a>
         </div>
-        <div _ngcontent-rxs-c13="" class="col-2 cc-sticky-nav-btn text-center">
-          <a
-            _ngcontent-rxs-c13=""
-            routerlinkactive="active"
-            href="#/key-indicators"
-            ><div
-              _ngcontent-rxs-c13=""
-              id="key-indicators-nav-icon"
-              class="img-div"
-            ></div>
-            <h5 _ngcontent-rxs-c13="">Key Indicators</h5></a
-          >
+        <div class="col-2 cc-sticky-nav-btn text-center">
+          <a>
+            <div id="key-indicators-nav-icon" class="img-div"></div>
+            <h5>Key Indicators</h5>
+          </a>
         </div>
       </div>
     </div>
     <!-- Why Lyme & Videos-->
-    <section class="container-fluid lf-why">
-      <h1 class="lf-why__heading text-center p-5 m-0">Why Lymefriends</h1>
+    <section class="container-fluid p-0 lf-why">
+      <h1 class="lf-why__heading text-center p-4 m-0">Why Lymefriends</h1>
       <div class="row g-0">
         <div class="col-4">
           <div class="lf-v-card">
@@ -171,7 +146,7 @@
       type="module"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
-    <script>
+    <script defer>
       let videoBtn = document.querySelector(".video-btn");
       let videoSrc = "";
 
@@ -186,14 +161,14 @@
             .querySelector("#video")
             .setAttribute(
               "src",
-              `https://www.youtube.com/embed/${videoSrc}?autoplay=0&amp;modestbranding=1&amp;showinfo=0`
+              `https://www.youtube.com/embed/${videoSrc}?autoplay=1&amp;modestbranding=1&amp;showinfo=0`
             );
         });
 
       document
         .querySelector("#lymePopup")
         .addEventListener("hide.bs.modal", (e) => {
-          document.querySelector("#video").removeAttr("src");
+          document.querySelector("#video").removeAttribute("src");
         });
     </script>
   </body>
