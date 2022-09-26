@@ -25,10 +25,10 @@
     </section>
     <!-- Navigation -->
     <div class="container">
-      <div class="row pt-4">
+      <div class="row pt-4 video-btn">
         <div class="col-2 cc-sticky-nav-btn text-center active">
           <a
-            class="active video-btn2"
+            class="active video-src-link"
             data-bs-toggle="modal"
             data-src="6ophW7Ask_0"
             data-bs-target="#lymePopup"
@@ -95,7 +95,7 @@
     <!-- Modal Trigger-->
     <button
       type="button"
-      class="btn btn-primary video-btn"
+      class="btn btn-primary video-btn2"
       data-bs-toggle="modal"
       data-src="6ophW7Ask_0"
       data-bs-target="#lymePopup"
@@ -149,10 +149,11 @@
     <script defer>
       let videoBtn = document.querySelector(".video-btn");
       let videoSrc = "";
-      console.log(videoBtn);
 
       videoBtn.addEventListener("click", (e) => {
-        videoSrc = e.target.getAttribute("data-src");
+        videoSrc = e.target
+          .closest("a.video-src-link")
+          .getAttribute("data-src");
       });
 
       document
