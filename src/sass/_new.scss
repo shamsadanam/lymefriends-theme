@@ -6,23 +6,40 @@
 }
 
 // hero section
+.lf-hero-container {
+  background-color: #000;
+}
 .lf-hero {
   min-height: 80vh;
+  max-width: 1100px;
+  padding: 50px 0px;
+  &__icon-section {
+    height: 250px;
+  }
   h1,
   span {
     color: #fff;
+  }
+  &__icon-playstore {
+    height: 80px;
+  }
+  &__icon-apple {
+    height: 80px;
+  }
+  &__mobile {
+    height: 600px;
   }
 }
 
 // why section
 .lf-why {
   &__heading {
-    background-color: #fff;
-    color: #742e90;
+    background-color: #742e90;
+    color: #fff;
     font-size: 2.4rem;
     font-weight: bold;
   }
-  .lf-v-card{
+  .lf-v-card {
     width: 100%;
   }
 }

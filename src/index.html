@@ -5,22 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <!-- Hero -->
-    <section class="container-fluid">
-      <div class="row justify-center align-items-center bg-dark lf-hero">
-        <div class="col-6 f-center flex-column">
+    <section class="container-fluid lf-hero-container">
+      <div
+        class="row justify-content-center align-items-center lf-hero mx-auto"
+      >
+        <div
+          class="col-6 d-flex justify-content-between align-items-center flex-column lf-hero__icon-section"
+        >
           <h1>Lymefriends</h1>
-          <div>
-            <a>Google Play</a>
-            <a>Apple Store</a>
+          <div class="f-center gap-4">
+            <a
+              ><img
+                src="assets/google-play-badge.png"
+                alt="download-from-google-playstore"
+                class="img-fluid lf-hero__icon-playstore"
+            /></a>
+            <a>
+              <img
+                src="assets/app-store.png"
+                alt="download-from-apple-store"
+                class="img-fluid lf-hero__icon-apple"
+              />
+            </a>
           </div>
         </div>
-        <div class="col-6">
-          <h1>Mobile Image</h1>
+        <div class="col-6 f-center">
+          <img
+            src="assets/lymefriends-on-mobile.png"
+            class="img-fluid lf-hero__mobile"
+          />
         </div>
       </div>
     </section>
@@ -100,36 +121,47 @@
     </div>
     <!-- Why Lyme & Videos-->
     <section class="container-fluid p-0 lf-why">
-      <h1 class="lf-why__heading text-center p-4 m-0">Why Lymefriends</h1>
+      <h1 class="lf-why__heading text-center p-5 m-0">Why Lymefriends</h1>
       <div class="row g-0">
-        <div class="col-4">
+        <div class="col-sm-4">
           <div class="lf-v-card ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/Hk6J3YWPNAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              src="https://www.youtube.com/embed/Hk6J3YWPNAg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4">
           <div class="lf-v-card">
-            <img src="assets/placeholder.jpg" alt="video" class="img-fluid" />
+            <div class="lf-v-card ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/uQwmii3rqjY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-4">
           <div class="lf-v-card">
-            <img src="assets/placeholder.jpg" alt="video" class="img-fluid" />
+            <div class="lf-v-card ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/y8l4ob7WWeo"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Modal Trigger-->
-    <button
-      type="button"
-      class="btn btn-primary video-btn2"
-      data-bs-toggle="modal"
-      data-src="6ophW7Ask_0"
-      data-bs-target="#lymePopup"
-    >
-      Play Video 2
-    </button>
-
     <!-- Modal -->
     <div
       class="modal fade"
