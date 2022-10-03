@@ -25080,6 +25080,36 @@ app-messages-modal {
   height: 600px;
 }
 
+.cc-sticky-nav-btn--popup {
+  padding: 15px;
+  border: none;
+  border-right: 2px solid #742e90;
+  border-bottom: none;
+  background-color: #fff;
+  transition: all 0.2s ease-in;
+}
+.cc-sticky-nav-btn--popup .img-div {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.cc-sticky-nav-btn--popup:nth-of-type(1) {
+  border-left: 2px solid #742e90;
+}
+.cc-sticky-nav-btn--popup:hover {
+  border-bottom: none;
+  cursor: pointer;
+  background-color: #742e90;
+}
+.cc-sticky-nav-btn--popup:hover .img-div {
+  color: #fff;
+}
+.cc-sticky-nav-btn--popup:hover h5 {
+  color: #fff;
+}
+.cc-sticky-nav-btn--popup h5 {
+  color: #040404;
+}
+
 .lf-why__heading {
   background-color: #742e90;
   color: #fff;
@@ -25117,4 +25147,9 @@ app-messages-modal {
   position: absolute;
   right: -30px;
   top: 0;
+  background-color: #fff;
+}
+
+.jumbotron-about {
+  background-image: url(CC_Banner_BG_Q_50.62437048fc3119bb.jpg);
 }
