@@ -1,3 +1,9 @@
+@mixin respondMax($width) {
+  @media only screen and (max-width: #{$width}) {
+    @content;
+  }
+}
+
 // utils
 .f-center {
   display: flex;
@@ -20,14 +26,17 @@
   span {
     color: #fff;
   }
-  &__icon-playstore {
-    height: 80px;
-  }
-  &__icon-apple {
-    height: 80px;
-  }
+  // &__icon-playstore {
+  //   height: 80px;
+  // }
+  // &__icon-apple {
+  //   height: 80px;
+  // }
   &__mobile {
     height: 600px;
+    @include respondMax(556px) {
+      height: 250px;
+    }
   }
 }
 
@@ -39,9 +48,22 @@
   border-bottom: none;
   background-color: #fff;
   transition: all 0.2s ease-in;
+  @include respondMax(675px) {
+    padding: 7px;
+  }
   .img-div {
     margin-bottom: 20px;
     font-size: 30px;
+    @include respondMax(675px) {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    @include respondMax(534px) {
+      margin-bottom: 5px;
+    }
+  }
+  h5 {
+    color: #040404;
   }
   &:nth-of-type(1) {
     border-left: 2px solid #742e90;
@@ -56,10 +78,6 @@
     h5 {
       color: #fff;
     }
-  }
-
-  h5 {
-    color: #040404;
   }
 }
 

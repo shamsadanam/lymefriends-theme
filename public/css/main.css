@@ -25070,14 +25070,13 @@ app-messages-modal {
 .lf-hero span {
   color: #fff;
 }
-.lf-hero__icon-playstore {
-  height: 80px;
-}
-.lf-hero__icon-apple {
-  height: 80px;
-}
 .lf-hero__mobile {
   height: 600px;
+}
+@media only screen and (max-width: 556px) {
+  .lf-hero__mobile {
+    height: 250px;
+  }
 }
 
 .cc-sticky-nav-btn--popup {
@@ -25088,9 +25087,28 @@ app-messages-modal {
   background-color: #fff;
   transition: all 0.2s ease-in;
 }
+@media only screen and (max-width: 675px) {
+  .cc-sticky-nav-btn--popup {
+    padding: 7px;
+  }
+}
 .cc-sticky-nav-btn--popup .img-div {
   margin-bottom: 20px;
   font-size: 30px;
+}
+@media only screen and (max-width: 675px) {
+  .cc-sticky-nav-btn--popup .img-div {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 534px) {
+  .cc-sticky-nav-btn--popup .img-div {
+    margin-bottom: 5px;
+  }
+}
+.cc-sticky-nav-btn--popup h5 {
+  color: #040404;
 }
 .cc-sticky-nav-btn--popup:nth-of-type(1) {
   border-left: 2px solid #742e90;
@@ -25105,9 +25123,6 @@ app-messages-modal {
 }
 .cc-sticky-nav-btn--popup:hover h5 {
   color: #fff;
-}
-.cc-sticky-nav-btn--popup h5 {
-  color: #040404;
 }
 
 .lf-why__heading {

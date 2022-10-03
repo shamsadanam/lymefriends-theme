@@ -18,10 +18,10 @@
         class="row justify-content-center align-items-center lf-hero mx-auto"
       >
         <div
-          class="col-6 d-flex justify-content-between align-items-center flex-column lf-hero__icon-section"
+          class="col-sm-6 d-flex justify-content-center justify-content-sm-between align-items-center flex-column lf-hero__icon-section"
         >
           <h1>Lymefriends</h1>
-          <div class="f-center gap-4">
+          <div class="f-center gap-4 mt-4 mt-sm-0">
             <a
               ><img
                 src="assets/google-play-badge.png"
@@ -37,7 +37,7 @@
             </a>
           </div>
         </div>
-        <div class="col-6 f-center">
+        <div class="col-sm-6 f-center">
           <img
             src="assets/lymefriends-on-mobile.png"
             class="img-fluid lf-hero__mobile"
@@ -46,70 +46,60 @@
       </div>
     </section>
     <!-- Navigation -->
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row video-btn">
+        <!-- provide the video id in data-src to show it in the popup -->
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="dq1bHDT7z3M"
+          data-bs-target="#lymePopup"
         >
-          <!-- provide the video id in data-src to show it in the popup -->
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="dq1bHDT7z3M"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <i class="fa-solid fa-user img-div"></i>
             <h5>Health Story</h5>
           </a>
         </div>
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="Jc-6VC0qulQ"
+          data-bs-target="#lymePopup"
         >
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="Jc-6VC0qulQ"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <i class="fa-solid fa-magnet img-div"></i>
             <h5>Match</h5>
           </a>
         </div>
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="dq1bHDT7z3M"
+          data-bs-target="#lymePopup"
         >
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="dq1bHDT7z3M"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <i class="fas fa-comments img-div"></i>
             <h5>Discuss</h5>
           </a>
         </div>
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="Jc-6VC0qulQ"
+          data-bs-target="#lymePopup"
         >
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="Jc-6VC0qulQ"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <i class="fa-solid fa-stethoscope img-div"></i>
             <h5>Symptoms</h5>
           </a>
         </div>
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="Jc-6VC0qulQ"
+          data-bs-target="#lymePopup"
         >
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="Jc-6VC0qulQ"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <div class="img-div">
               <i class="fa fa-tasks img-div"></i>
             </div>
@@ -118,13 +108,11 @@
         </div>
         <div
           class="col-2 cc-sticky-nav-btn cc-sticky-nav-btn--popup text-center"
+          data-bs-toggle="modal"
+          data-src="Jc-6VC0qulQ"
+          data-bs-target="#lymePopup"
         >
-          <a
-            class="video-src-link"
-            data-bs-toggle="modal"
-            data-src="Jc-6VC0qulQ"
-            data-bs-target="#lymePopup"
-          >
+          <a class="video-src-link">
             <i class="fas fa-chart-line img-div"></i>
             <h5>Key Indicators</h5>
           </a>
@@ -592,8 +580,9 @@
 
       videoBtn.addEventListener("click", (e) => {
         videoSrc = e.target
-          .closest("a.video-src-link")
+          .closest(".cc-sticky-nav-btn--popup")
           .getAttribute("data-src");
+        console.log(videoSrc);
       });
 
       document
